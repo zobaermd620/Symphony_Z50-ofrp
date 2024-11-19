@@ -1,0 +1,3 @@
+add_lunch_combo twrp_Symphony_Z50-user 
+add_lunch_combo twrp_Symphony_Z50-userdebug 
+add_lunch_combo twrp_Symphony_Z50-eng
