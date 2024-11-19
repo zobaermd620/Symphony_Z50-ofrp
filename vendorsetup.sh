@@ -22,11 +22,20 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
 
 
-
 # Version & Variant
  export FOX_VERSION="R12.1"
  export FOX_VARIANT="A14"
  export FOX_BUILD_TYPE="Stable"
+
+#OFR binary files
+export FOX_REPLACE_BUSYBOX_PS=1
+export FOX_USE_BASH_SHELL=1
+export FOX_ASH_IS_BASH=1
+export FOX_REPLACE_TOOLBOX_GETPROP=1
+export FOX_USE_TAR_BINARY=1
+export FOX_USE_XZ_UTILS=1
+export FOX_USE_SED_BINARY=1
+export FOX_USE_NANO_EDITOR=1
 
 
 
