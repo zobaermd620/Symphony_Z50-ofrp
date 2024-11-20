@@ -58,6 +58,10 @@ BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 BOARD_KERNEL_SEPARATED_DTBO := 
 endif
 
+# System as root
+BOARD_ROOT_EXTRA_FOLDERS := cache carrier data_mirror efs keyrefuge linkerconfig metadata omr optics prism spu
+BOARD_SUPPRESS_SECURE_ERASE := true
+
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
@@ -94,4 +98,20 @@ TW_USE_TOOLBOX := true
 TW_FRAMERATE := 30
 TW_MAX_BRIGHTNESS := 450
 TW_DEFAULT_BRIGHTNESS := 20
+# SHRP
+SHRP_DEVICE_CODE := Symphony_Z50
+SHRP_PATH := device/symphony/$(SHRP_DEVICE_CODE)
+SHRP_MAINTAINER := HASIB
+SHRP_REC_TYPE := Normal
+SHRP_DEVICE_TYPE := A_Only
+SHRP_REC := /dev/block/platform/bootdevice/by-name/recovery
+SHRP_INTERNAL := /sdcard
+SHRP_EXTERNAL := /external_sd
+SHRP_OTG := /usb_otg
+
+SHRP_STATUSBAR_RIGHT_PADDING := 20
+SHRP_STATUSBAR_LEFT_PADDING := 20
+SHRP_NOTCH := true
+SHRP_EXPRESS := true
+SHRP_LITE := true
 
