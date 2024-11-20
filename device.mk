@@ -6,3 +6,7 @@
 #
 
 LOCAL_PATH := device/symphony/Symphony_Z50
+
+# Dynamic partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := false
+
