@@ -98,20 +98,5 @@ TW_USE_TOOLBOX := true
 TW_FRAMERATE := 30
 TW_MAX_BRIGHTNESS := 450
 TW_DEFAULT_BRIGHTNESS := 20
-# SHRP
-SHRP_DEVICE_CODE := Symphony_Z50
-SHRP_PATH := device/symphony/$(SHRP_DEVICE_CODE)
-SHRP_MAINTAINER := HASIB
-SHRP_REC_TYPE := Normal
-SHRP_DEVICE_TYPE := A_Only
-SHRP_REC := /dev/block/platform/bootdevice/by-name/recovery
-SHRP_INTERNAL := /sdcard
-SHRP_EXTERNAL := /external_sd
-SHRP_OTG := /usb_otg
-
-SHRP_STATUSBAR_RIGHT_PADDING := 20
-SHRP_STATUSBAR_LEFT_PADDING := 20
-SHRP_NOTCH := true
-SHRP_EXPRESS := true
-SHRP_LITE := true
-
+# Enable MTP
+BOARD_MTP_SUPPORT := true
